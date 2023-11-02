@@ -1,0 +1,24 @@
+body .pokedex {
+    /* background: url('https://bindy.es/Codepen-resources/img/pokedex.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; */
+    /* width: 750px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto; */
+}
+
+.pokedex img {
+}
+
+.pokedex .attachment-screen-photo {
+    /* position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 212px;
+    left: 120px; */
+}
