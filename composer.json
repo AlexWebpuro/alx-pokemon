@@ -1,0 +1,21 @@
+{
+    "name": "alex/alx-pokemon",
+    "description": "Awesome plugin test",
+    "type": "project",
+    "require-dev": {
+        "symfony/var-dumper": "7.0.x-dev"
+    },
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "./inc"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Monroy",
+            "email": "alexwebpuro@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
