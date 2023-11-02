@@ -18,4 +18,23 @@
  * Domain Path:       /languages
  */
 
- 
+defined( 'ABSPATH' ) or die( "Hey you cant access this file!" );
+
+if( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
+    require_once dirname( __FILE__ ) . '/vendor/autoload.php';
+}
+
+function activate_pokemon_plugin() {
+    \Inc\Base\Activate::activate();
+}
+
+function deactivate_pokemon_plugin() {
+    \Inc\Base\Deactivate::deactivate();
+}
+
+register_activation_hook( __FILE__, 'activate_pokemon_plugin' );
+register_deactivation_hook( __FILE__, 'deactivate_pokemon_plugin' );
+
+if( class_exists( 'Inc\\Init' )) {
+    Inc\Init::register_services();
+}
