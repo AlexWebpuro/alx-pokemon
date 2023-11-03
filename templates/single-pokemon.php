@@ -14,7 +14,7 @@ get_header();
 
 <div class="wrapper" id="single-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="" id="content" tabindex="-1">
 		<div class="row">
 				<!-- <img src="https://bindy.es/Codepen-resources/img/pokedex.png" alt=""> -->
 				<?php
