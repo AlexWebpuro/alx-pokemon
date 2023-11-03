@@ -17,9 +17,9 @@ final class Init {
             Pages\Admin::class,
             Base\Enqueue::class,
             Base\SettingsLinks::class,
+            Base\Routes::class,
             Base\Templates::class,
             CPT\Pokemon::class,
-            // API\Info::class,
         ];
     }
 
