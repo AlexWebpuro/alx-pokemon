@@ -12,7 +12,10 @@ body .pokedex {
     margin: 0 auto; */
 }
 
-.pokedex img {
+.pokemon__title {
+    font-family: 'Pokemon Solid';
+    color: #ffcc01;
+    -webkit-text-stroke: 2px #045696;
 }
 
 .pokedex .attachment-screen-photo {
