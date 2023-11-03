@@ -13,6 +13,7 @@ class Routes extends BaseController {
     }
 
     public function generate_rewrite_rule() {
+        // if( ! post_type_exists('pokemon') ) return;
         $args = array(
             'numberposts' 	=> -1,
             'post_type'		=> 'pokemon'
