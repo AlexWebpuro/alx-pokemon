@@ -19,6 +19,7 @@ final class Init {
             Base\SettingsLinks::class,
             Base\Routes::class,
             Base\Templates::class,
+            Base\RESTApi::class,
             CPT\Pokemon::class,
         ];
     }

@@ -47,9 +47,18 @@ class Info {
 
         $img_id = $this->fetch_attachment_post_id_from_srcs( $url_img );
 
+        $get_description = wp_remote_get( "https://pokeapi.co/api/v2/pokemon-species/$pokemon_body->name" );
+
+        $desc_body = json_decode( wp_remote_retrieve_body( $get_description ) );
+
+        $desciption = $desc_body->flavor_text_entries[0]->flavor_text;
+
+        $desciption = str_replace(PHP_EOL, '', $desciption);
+        // dd( $desciption );
+
         $pokemon = array(
             'name'              => ucfirst( $pokemon_body->name ),
-            'description'       => ';',
+            'description'       => stripslashes($desciption),
             'weight'            => $pokemon_body->weight,
             'type'              => $this->handle_types( $pokemon_body->types ),
             'pokedex_recent_id' => $pokemon_body->id,
